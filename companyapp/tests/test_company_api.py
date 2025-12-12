@@ -19,7 +19,7 @@ class CompanyAPITestCase(APITestCase):
         self.url = reverse("company-list")  
 
     # -----------------------
-    # ✅ Small Business Tests
+    # Small Business Tests
     # -----------------------
     def test_create_small_business_valid(self):
         data = {
@@ -47,7 +47,7 @@ class CompanyAPITestCase(APITestCase):
         self.assertIn("company_details", response.data)
 
     # -----------------------
-    # ✅ Startup Tests
+    #  Startup Tests
     # -----------------------
     def test_create_startup_valid(self):
         data = {
@@ -74,7 +74,7 @@ class CompanyAPITestCase(APITestCase):
         self.assertIn("company_details", response.data)
 
     # -----------------------
-    # ✅ Corporate Tests
+    #  Corporate Tests
     # -----------------------
     def test_create_corporate_valid(self):
         data = {
