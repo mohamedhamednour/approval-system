@@ -8,6 +8,7 @@ class Company(models.Model):
     name = models.CharField(max_length=255)
     type = models.CharField(max_length=50, choices=TYPE_CHOICES)
     company_details =  models.JSONField(null=True, blank=True)
+    # models_usecase.py Optional Approach to handle different company types
     objects = CompanyQuerySet.as_manager()
 
 
